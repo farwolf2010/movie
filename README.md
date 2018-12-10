@@ -1,4 +1,17 @@
 # Introduction
-文档请前往 [https://weexplus.github.io/doc/quickstart/](https://weexplus.github.io/doc/quickstart/).
-## 快速开始
- npm install weexplus -g
+weexplus的一个demo项目
+```` 
+ 1.npm install
+ 
+ 2.npm run dev
+ 
+ 3.weexplus start
+ 
+ 4.网页上选中 busi/index.js 扫描生成的二维码 即可查看到效果
+
+
+````
+# weexplus 文档地址
+ [https://weexplus.github.io/doc/quickstart/](https://weexplus.github.io/doc/quickstart/).
+
+ 
