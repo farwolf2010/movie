@@ -1,6 +1,11 @@
 # Introduction
 weexplus的一个demo项目
+
+
 ```` 
+
+（下载解压后，将movie-master改名为movie，否则跑步起来）
+
  1.npm install
  
  2.npm run native
