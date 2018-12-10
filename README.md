@@ -3,7 +3,7 @@ weexplus的一个demo项目
 ```` 
  1.npm install
  
- 2.npm run dev
+ 2.npm run native
  
  3.weexplus start
  
