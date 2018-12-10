@@ -81,7 +81,7 @@
         item-selected-color:#ffffff;
         item-size:20px;
         top:120px;
-        left:1;
+        left:1px;
     }
     .slider{width:750px;height:316px;}
     .frame{width:750px;height:316px;position:relative;}
