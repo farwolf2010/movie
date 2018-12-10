@@ -4,7 +4,7 @@ weexplus的一个demo项目
 
 ```` 
 
-（下载解压后，将movie-master改名为movie，否则跑步起来）
+（下载解压后，将movie-master改名为movie，否则跑不起来）
 
  1.npm install
  
@@ -12,7 +12,7 @@ weexplus的一个demo项目
  
  3.weexplus start
  
- 4.网页上选中 busi/index.js 扫描生成的二维码 即可查看到效果
+ 4.在弹出的网页上，选中busi，再选中index.js， 扫描生成的二维码 即可查看到效果
 
 
 ````
