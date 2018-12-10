@@ -194,7 +194,8 @@
 
             },
           onLoad(){
-            this.load();
+//              this.toast('ss')
+
           }
 
 
@@ -205,7 +206,7 @@
 
         created:function(){
 
-
+          this.load();
 
 
         },
