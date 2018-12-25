@@ -182,14 +182,14 @@
                 this.banners=r.banners;
                 this.films=r.films;
                 this.serials=r.serials
-                this.net.postSilent('recommand.do',p,(res)=>{
-
-                    pref.set('mainpagestr',res);
-                    this.banner=res.banners;
-                    this.films=res.films;
-                    this.serials=res.serials;
-
-                })
+//                this.net.postSilent('recommand.do',p,(res)=>{
+//
+//                    pref.set('mainpagestr',res);
+//                    this.banner=res.banners;
+//                    this.films=res.films;
+//                    this.serials=res.serials;
+//
+//                })
 
 
             },

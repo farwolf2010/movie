@@ -73,7 +73,7 @@
             </div>
             <div  :style="{'visibility':selectIndex==1?'visible':'hidden'}"  style="position: absolute;left: 20;top: 10;right: 10;bottom: 0">
 
-                <web  style=" background-color:#333333;position: absolute;left: 0;right: 0;top: 0;bottom: 0" :src="item.des"></web>
+                <web  style=" background-color:#333333;position: absolute;left: 0;right: 0;top: 0;bottom: 0" :source="des"></web>
 
             </div>
         </div>
@@ -138,6 +138,7 @@
                 selectIndex:0,
                 isloading:false,
                 coltext:'收藏',
+              des:'xxxxx'
 
 
 
@@ -227,7 +228,9 @@
                   //start
                    this.isloading=true
                },(res)=>{
+                    res.film.des='sssssss'
                     this.item=res.film
+
                },()=>{
                    this.isloading=false
                })

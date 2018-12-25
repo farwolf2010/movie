@@ -10,8 +10,10 @@
     },
     methods: {
       onLoad(){
-        let modal=weex.requireModule('modal')
-        this.push('root:test.js')
+        let nav=weex.requireModule('navigator')
+        nav.presentFull({url:'root:busi/index.js',animated:false},()=>{
+
+        })
       }
     },
     created () {

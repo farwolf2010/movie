@@ -1,4 +1,5 @@
 const Mixins = {}
+import Vue from 'vue'
 let wraper = require('../component/wraper.vue')
 let head = require('../busi/component/header.vue')
 let flist = require('../busi/component/flist.vue')

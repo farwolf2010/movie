@@ -19,16 +19,14 @@ PODS:
     - WeexSDK
   - CHXBannerView (0.8.3)
   - CocoaAsyncSocket (7.6.3)
-  - DACircularProgress (2.3.1)
   - DOPDropDownMenu-Enhanced (1.0.0)
   - farwolf (0.0.1):
     - AFNetworking (~> 3.2.1)
     - GSKStretchyHeaderView (~> 0.12.2)
-    - LPPhotoViewer (~> 0.0.7)
     - Masonry (~> 0.6.3)
     - MBProgressHUD (~> 0.9.2)
     - SDCycleScrollView (~> 1.65)
-    - SDWebImage (~> 3.8)
+    - SDWebImage (~> 4.2.2)
     - SRMonthPicker
     - TOCropViewController (~> 2.0.8)
     - UIViewController_PopUp (~> 0.0.2)
@@ -43,9 +41,9 @@ PODS:
     - farwolf.business
     - HcdDateTimePicker (~> 1.1.1)
     - LMTowDatePicker
+    - LPPhotoViewer (~> 0.2.2)
     - Masonry (~> 0.6.3)
     - RHAddressBook
-    - SDWebImage (~> 3.8)
     - SocketRocket (~> 0.4.2)
     - WeexPluginLoader (~> 0.0.1.9.1)
     - WeexSDK
@@ -55,17 +53,16 @@ PODS:
   - HcdDateTimePicker (1.1.1)
   - LMTowDatePicker (0.0.1):
     - FSCalendar (~> 2.7.9)
-  - LPPhotoViewer (0.0.7):
-    - DACircularProgress (~> 2.3.1)
-    - SDWebImage (~> 3.8)
+  - LPPhotoViewer (0.2.2):
+    - YYWebImage
   - Masonry (0.6.4)
   - MBProgressHUD (0.9.2)
   - RHAddressBook (1.1.1)
-  - SDCycleScrollView (1.65):
-    - SDWebImage (~> 3.7)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
   - SocketRocket (0.4.2)
   - SRMonthPicker (0.2.10)
   - SSLunarDate (0.0.1)
@@ -80,7 +77,14 @@ PODS:
   - WXDevtool (0.16.3):
     - SocketRocket
     - WeexSDK
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
   - YYModel (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
   - YZHeaderScaleImage (1.0.1)
   - ZipArchive (1.4.0)
   - zipzap (8.1.1)
@@ -98,7 +102,6 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD (~> 0.9.2)
   - SDCycleScrollView (~> 1.65)
-  - SDWebImage (~> 3.8)
   - SRMonthPicker
   - SSLunarDate (~> 0.0.1)
   - TOCropViewController (~> 2.0.12)
@@ -116,7 +119,6 @@ SPEC REPOS:
     - BindingX
     - CHXBannerView
     - CocoaAsyncSocket
-    - DACircularProgress
     - DOPDropDownMenu-Enhanced
     - FSCalendar
     - GSKStretchyHeaderView
@@ -135,7 +137,10 @@ SPEC REPOS:
     - UIViewController_PopUp
     - WeexPluginLoader
     - WXDevtool
+    - YYCache
+    - YYImage
     - YYModel
+    - YYWebImage
     - YZHeaderScaleImage
     - ZipArchive
     - zipzap
@@ -157,21 +162,20 @@ SPEC CHECKSUMS:
   BindingX: b3c6c1c5dcd8e50277cfc5daad09d7010c227524
   CHXBannerView: bfbaede8576af318bd2ce6fa8dcdc0cbfbd9dab8
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DOPDropDownMenu-Enhanced: 9ec473b16351b5b0b2d6ef87e7f666fe5ff54ad5
-  farwolf: 53b76f772dd0752146772a0aa0f3761fbb28b167
+  farwolf: 2a23d2e644d477a1822e32f13a80870761f0f3be
   farwolf.business: c389f61c1abe895c04b0c2f9df27df7783d0d4dd
-  farwolf.weex: 37299001026992b45a0e9bb302c8b2392732a9c1
+  farwolf.weex: 4bb9999d391636056e4b656eea4be5c93a714c03
   FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   GSKStretchyHeaderView: affdd9f3ae6d6f3cea31dccf604367c617d037ad
   HcdDateTimePicker: 187736981f667f699d4d8d6ccc21621b55a6edb8
   LMTowDatePicker: eaee88a977b5841215c2fb06320c040e28d293b9
-  LPPhotoViewer: 2da9329480ad2f23c6adbcbc0baee6620ed2bb7f
+  LPPhotoViewer: d608bd60c17732a5198d65b87d33ccf6f2f73273
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   RHAddressBook: 870e9e0b34cb917b9c4c600fc3b7d5b530b23b13
-  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SRMonthPicker: d3c639e82f525f1c10d1ad7f4bbdf180d404942b
   SSLunarDate: d5d7d581f7e7e157c8d704a5f053b4ebcf760bba
@@ -181,11 +185,14 @@ SPEC CHECKSUMS:
   WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
   WeexSDK: 76430eb93c632cd0e2b1a9d2d1baa58cedb84f4a
   WXDevtool: c028138b4e3a8856758acfea2328f708d3adbedd
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
   YZHeaderScaleImage: 1ca4ed11644a4ccad7c4370de2fcbc8f6e145793
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
   zipzap: 940162d9c9c60472c2eab341385e4214da0fdf1c
 
-PODFILE CHECKSUM: fe3519534872a2ced238a680f0bf42c99d680413
+PODFILE CHECKSUM: 7115096066513529b30b995770b535ee37edd598
 
 COCOAPODS: 1.5.0

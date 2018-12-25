@@ -2,6 +2,7 @@
     <div>
         <!--<head title="测试"></head>-->
         <image @click="tenv" style="width: 200px;height: 200px" src="" placeholder="root:img/logo.png"  ></image>
+        <text>{{source}}</text>
         <!--<image @click="chat" style="width: 200px;height: 200px" src="root:img/load.gif"></image>-->
         <!--<slider class="slider" interval="3000" ref="slider" auto-play="true"  >-->
             <!--<div @click="gotoBannerDetail(item)"  class="frame" v-for="item in banners" >-->
@@ -9,20 +10,26 @@
             <!--</div>-->
             <!--<indicator class="indicator"></indicator>-->
         <!--</slider>-->
+        <web :src="src" style="width: 500px;height: 500px;background-color: red" :source="source"></web>
     </div>
 </template>
 <script>
   export default{
     props: {},
     data () {
-      return {}
+      return {
+        source:'',
+        src:''
+      }
     },
     methods: {
 
       tenv(){
-        let env=weex.requireModule('env')
-       let res= env.isFringeScreen()
-        this.alert(res+'')
+//        let env=weex.requireModule('env')
+//       let res= env.isFringeScreen()
+//        this.alert(res+'')
+//        this.source=this.source+'ssss'
+        this.src='http://192.168.0.102:8890/pages/'
       },
       ok(){
          let im=weex.requireModule('nim')

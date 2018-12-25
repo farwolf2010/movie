@@ -172,8 +172,8 @@ public class SplashActivity extends WeexActivity {
     public void init() {
 
 
-//        Bitmap bmx= FileTool.loadAssetImage(Config.splash(this),this);
-//        this.img.setImageBitmap(bmx);
+        Bitmap bmx= FileTool.loadAssetImage(Config.splash(this),this);
+        this.img.setImageBitmap(bmx);
         this.bindDelay(1000);
         EventBus.getDefault().register(this);
 
