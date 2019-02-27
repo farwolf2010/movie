@@ -193,11 +193,13 @@ public class WXWeb extends WXComponent {
         }
     }
 
-    private void loadUrl(String url) {
+    //zjr
+    public void loadUrl(String url) {
         getWebView().loadUrl(url);
     }
 
-    private void loadDataWithBaseURL(String source) {
+    //zjr
+    public void loadDataWithBaseURL(String source) {
         getWebView().loadDataWithBaseURL(source);
     }
 

@@ -1,7 +1,7 @@
 <template>
     <div style="flex: 1;">
 
-        <host :index="index"  style="flex: 1">
+        <host :page="index"  style="flex: 1">
            <mainpage></mainpage>
            <serial></serial>
            <movie></movie>

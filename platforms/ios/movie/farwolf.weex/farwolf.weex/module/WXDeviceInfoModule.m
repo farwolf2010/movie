@@ -10,7 +10,10 @@
 
 @implementation WXDeviceInfoModule
 WX_EXPORT_METHOD_SYNC(@selector(mac))
+WX_EXPORT_METHOD_SYNC(@selector(tel:))
 WX_EXPORT_METHOD_SYNC(@selector(deviceId))
+WX_EXPORT_METHOD_SYNC(@selector(openUrl:))
+
 -(NSString*)mac{
     NSDictionary *dict = [self SSIDInfo];
     NSString *mac = dict[@"BSSID"];　　 //无线网的MAC地址
@@ -42,4 +45,20 @@ WX_EXPORT_METHOD_SYNC(@selector(deviceId))
     return info;
     
 }
+
+-(void)tel:(NSString*)tel{
+    NSMutableString * str=[[NSMutableString alloc] initWithFormat:@"tel:%@",tel];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str] options:nil completionHandler:^(BOOL success) {
+        
+    }];
+}
+
+-(void)openUrl:(NSString*)url{
+//    NSString *openURL = @"http://www.baidu.com/";
+    NSURL *URL = [NSURL URLWithString:url];
+    [[UIApplication sharedApplication] openURL:URL];
+}
+
+
+
 @end
